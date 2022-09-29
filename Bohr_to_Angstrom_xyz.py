@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import sys
 
-BOHR_TO_ANGSTROM = 0.52917721067
+FACTOR = 0.52917721067   # Bohr to Angstrom 
+#FACTOR = 1.8897268777744 # Angstrom to Bohr 
 
 def get_lines(filename):
 
@@ -14,9 +15,9 @@ def coordlines_to_data(line):
 
     coorItems = line.split()
 
-    x = float(coorItems[1]) * BOHR_TO_ANGSTROM
-    y = float(coorItems[2]) * BOHR_TO_ANGSTROM
-    z = float(coorItems[3]) * BOHR_TO_ANGSTROM
+    x = float(coorItems[1]) * FACTOR
+    y = float(coorItems[2]) * FACTOR
+    z = float(coorItems[3]) * FACTOR
     atom_type = coorItems[0] 
     if   atom_type ==   "1" : atom_type = "H "
     elif atom_type ==   "2" : atom_type = "He"
