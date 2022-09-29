@@ -1,5 +1,5 @@
-# Bohr-to-Angstrom-converter-xyz
-It is boring to convert xyz Cartesian cooridantes from Bohr to Angstrom and vice versa, use this script to do jobs automatically.
+# Unit converter from Bohr to Angstrom and vice versa  
+It is boring to convert xyz Cartesian cooridantes of chemical systems from Bohr to Angstrom and vice versa, use this script to do jobs automatically.
 Place all xyz coordinates to be converted to a directory, and then run the script "Coordinate-converter.shell" by typing "bash Coordinate-converter.shell".
 All original coordinates of Bohr units will be copied to a directory called original.
 
