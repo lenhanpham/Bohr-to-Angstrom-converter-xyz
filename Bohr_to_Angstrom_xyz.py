@@ -148,7 +148,7 @@ if __name__ == "__main__":
     lines = get_lines(coord_filename)
 
     print(len(lines) - 2)
-    print("xyz Cartesian Cooridante in Angstrom generated from file:", coord_filename)
+    print("xyz Cartesian Coordinate in Angstrom generated from file:", coord_filename)
     #print(lines[0], end = "")
     for line in lines[2:]:
         (atom_type, x, y, z) = coordlines_to_data(line)
